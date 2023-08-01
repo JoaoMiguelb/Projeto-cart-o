@@ -1,0 +1,136 @@
+header {
+    height: 300px;
+    
+    background: url(../images/bg-main-desktop.png) no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.cartao{
+    width: 320px;
+    height: 200px;
+    border-radius: 5px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.front{
+    background: url(../images/bg-card-front.png) no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-areas: 
+    "img img"
+    "main main"
+    "aside right";
+
+    position: relative;
+    top: 33%;
+    right: 3%;
+    padding: 15px;
+}
+
+.num__cartao{
+    grid-area: main;
+    font-size: 20px;
+}
+
+.nome__cartao{
+    grid-area: aside;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.data__cartao{
+    grid-area: right;
+    padding-left: 120px;
+    font-size: 12px;
+}
+
+.img__cartao {
+    grid-area: img;
+    height: 40px;
+}
+
+.back{
+    background: url(../images/bg-card-back.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 15%;
+}
+
+.cod__cartao{
+    position: relative;
+    top: 38%;
+    left: 76%;
+    width: 1px;
+}
+
+.text{
+    color: white;
+}
+
+@media screen and (min-width: 750px){
+    .front{
+        top: 40%;
+        right: 10%;
+        padding: 15px;
+    }
+
+    .back{
+        left: 40%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header{
+        height: 100%;
+        width: 40%;
+    }
+
+    .cartao{
+        width: 500px;
+    }
+
+    .back{
+        top: 50%;
+        left: 12%;
+        margin-top: auto;
+    }
+
+    .front{
+        right: 0;
+        top: 15%;
+        left: 15%;
+    }
+
+    .num__cartao{
+        font-size: 25px;
+    }
+    
+    .nome__cartao{
+        font-size: 14px;
+        width: 100%;
+        margin-right: auto;
+    }
+    
+    .data__cartao{
+        font-size: 14px;
+        
+        margin-right: 50px;
+        padding-left: 20%;
+    }
+    
+    .img__cartao {
+        height: 50px;
+    }
+
+    .cod__cartao{
+        position: relative;
+        top: 43%;
+        left: 55%;
+
+        font-size: 20px;
+    }
+}

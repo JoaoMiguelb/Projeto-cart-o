@@ -1,0 +1,93 @@
+main{
+    width: 100%;
+}
+
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+    margin: auto;
+    gap: 15px;
+}
+
+#mes, #ano{
+    width: 40px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container__especial{
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    width: 340px;
+}
+
+.data, .cod{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border: 1px solid hsl(270, 3%, 87%);
+    width: 340px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#cod{
+    width: 100px;
+}
+
+#botao{
+    width: 99%;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 750px){
+    form{
+        font-size: 22px;
+        gap: 30px;
+    }
+
+   input{
+    width: 96%;
+    padding: 15px;
+   }
+   
+   .data, .cod{
+    font-size: 15px;
+}
+}
+
+@media screen and (min-width: 1000px) {
+    main{
+        height: 100%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form{
+        font-size: 25px;
+    }
+
+    .data, .cod{
+        font-size: 17px;
+    }
+
+    input{
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.552);
+    }
+
+    ::placeholder{
+        font-size: 18px;
+    }
+}
